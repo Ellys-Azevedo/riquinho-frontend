@@ -1,5 +1,13 @@
-export function Titulo(){
+interface ITitulo{
+    texto: string;
+
+}
+
+export function Titulo(props:ITitulo){
     return(
-        <h1>Título Exemplo</h1>
+        
+        <h1>{props.texto}</h1>
     )
 }
+
+
